@@ -23,6 +23,7 @@ public class ZoomViewPagerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         final ImageViewPager viewPager = new ImageViewPager(this);
         viewPager.setId(R.id.viewPager);
+        viewPager.setBackgroundColor(0xff000000);
         setContentView(viewPager);
 
         FragmentManager fm = getSupportFragmentManager();
