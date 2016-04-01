@@ -6,9 +6,9 @@ import java.util.List;
 
 public class MockData {
     public static final List<Integer> data = Collections.unmodifiableList(Arrays.asList(
-            R.drawable.image01,
-            R.drawable.image02,
-            R.drawable.image03,
-            R.drawable.image04
+            R.drawable.image1,
+            R.drawable.image2,
+            R.drawable.image3,
+            R.drawable.image0
     ));
 }

@@ -1,44 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:orientation="horizontal"
-    android:padding="10dp">
-    <ImageView
-        android:layout_marginRight="2dp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/image01"/>
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/image02"/>
+    android:layout_height="match_parent">
 
-    <FrameLayout
-        android:layout_marginLeft="2dp"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="clickShowDetail">
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/image03"/>
-        <View
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="#66000000"/>
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_gravity="bottom|right"
-            android:src="@android:drawable/ic_dialog_dialer"/>
-    </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:onClick="clickShowDetail">
 
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image3"/>
 
-</LinearLayout>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#66000000"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|right"
+                android:src="@android:drawable/ic_dialog_dialer"/>
+        </FrameLayout>
+
+        <com.dfer.sample.widget.SudokuLayoutWidget
+            android:id="@+id/main_sudokuLayoutWidget"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:background="#8111"/>
+
+    </LinearLayout>
+</ScrollView>

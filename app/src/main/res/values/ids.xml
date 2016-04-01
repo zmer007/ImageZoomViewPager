@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sudokuWidgetImage0" type="id"/>
+    <item name="sudokuWidgetImage1" type="id"/>
+    <item name="sudokuWidgetImage2" type="id"/>
+    <item name="sudokuWidgetImage3" type="id"/>
+    <item name="sudokuWidgetImage4" type="id"/>
+    <item name="sudokuWidgetImage5" type="id"/>
+    <item name="sudokuWidgetImage6" type="id"/>
+    <item name="sudokuWidgetImage7" type="id"/>
+    <item name="sudokuWidgetImage8" type="id"/>
+</resources>
