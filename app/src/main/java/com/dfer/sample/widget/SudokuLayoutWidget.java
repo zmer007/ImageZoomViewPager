@@ -61,32 +61,32 @@ public final class SudokuLayoutWidget extends FrameLayout implements OnClickList
                 final int oWidth = mImageViewWidth * 2 + mViewsSpace;
                 LayoutParams params = new LayoutParams(oWidth, oWidth);
                 mImageViews[0].setLayoutParams(params);
-                mImageViews[0].setImageResource(R.drawable.image0);
+                mImageViews[0].setImageResource(R.drawable.a);
                 mImageViews[0].setVisibility(View.VISIBLE);
                 break;
             case JUST_FOUR:
                 LayoutParams params0 = new LayoutParams(mImageViewWidth, mImageViewWidth);
                 mImageViews[0].setLayoutParams(params0);
-                mImageViews[0].setImageResource(R.drawable.image0);
+                mImageViews[0].setImageResource(R.drawable.a);
                 mImageViews[0].setVisibility(View.VISIBLE);
 
                 LayoutParams params1 = new LayoutParams(mImageViewWidth, mImageViewWidth);
                 params1.leftMargin = mImageViewWidth + mViewsSpace;
                 mImageViews[1].setLayoutParams(params1);
-                mImageViews[1].setImageResource(R.drawable.image1);
+                mImageViews[1].setImageResource(R.drawable.b);
                 mImageViews[1].setVisibility(View.VISIBLE);
 
                 LayoutParams params2 = new LayoutParams(mImageViewWidth, mImageViewWidth);
                 params2.topMargin = mImageViewWidth + mViewsSpace;
                 mImageViews[2].setLayoutParams(params2);
-                mImageViews[2].setImageResource(R.drawable.image2);
+                mImageViews[2].setImageResource(R.drawable.c);
                 mImageViews[2].setVisibility(View.VISIBLE);
 
                 LayoutParams params3 = new LayoutParams(mImageViewWidth, mImageViewWidth);
                 params3.topMargin = mImageViewWidth + mViewsSpace;
                 params3.leftMargin = mImageViewWidth + mViewsSpace;
                 mImageViews[3].setLayoutParams(params3);
-                mImageViews[3].setImageResource(R.drawable.image3);
+                mImageViews[3].setImageResource(R.drawable.d);
                 mImageViews[3].setVisibility(View.VISIBLE);
                 break;
             case NORMAL:
@@ -121,13 +121,13 @@ public final class SudokuLayoutWidget extends FrameLayout implements OnClickList
     private void relayout2ImageViews() {
         LayoutParams p0 = new LayoutParams(mImageViewWidth, mImageViewWidth);
         mImageViews[0].setLayoutParams(p0);
-        mImageViews[0].setImageResource(R.drawable.image0);
+        mImageViews[0].setImageResource(R.drawable.a);
         mImageViews[0].setVisibility(View.VISIBLE);
 
         LayoutParams p1 = new LayoutParams(mImageViewWidth, mImageViewWidth);
         p1.leftMargin = mImageViewWidth + mViewsSpace;
         mImageViews[1].setLayoutParams(p1);
-        mImageViews[1].setImageResource(R.drawable.image1);
+        mImageViews[1].setImageResource(R.drawable.b);
         mImageViews[1].setVisibility(View.VISIBLE);
     }
 
@@ -137,7 +137,7 @@ public final class SudokuLayoutWidget extends FrameLayout implements OnClickList
         LayoutParams p2 = new LayoutParams(mImageViewWidth, mImageViewWidth);
         p2.leftMargin = 2 * (mImageViewWidth + mViewsSpace);
         mImageViews[2].setLayoutParams(p2);
-        mImageViews[2].setImageResource(R.drawable.image2);
+        mImageViews[2].setImageResource(R.drawable.c);
         mImageViews[2].setVisibility(View.VISIBLE);
     }
 
@@ -147,7 +147,7 @@ public final class SudokuLayoutWidget extends FrameLayout implements OnClickList
         LayoutParams p3 = new LayoutParams(mImageViewWidth, mImageViewWidth);
         p3.topMargin = mImageViewWidth + mViewsSpace;
         mImageViews[3].setLayoutParams(p3);
-        mImageViews[3].setImageResource(R.drawable.image3);
+        mImageViews[3].setImageResource(R.drawable.d);
         mImageViews[3].setVisibility(View.VISIBLE);
 
         LayoutParams p4 = new LayoutParams(mImageViewWidth, mImageViewWidth);

@@ -21,7 +21,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/image3"/>
+                android:src="@drawable/a"/>
 
             <View
                 android:layout_width="50dp"

@@ -3,11 +3,13 @@ package com.dfer.sample;
 import android.content.Context;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 
 import it.sephiroth.android.library.imagezoom.ImageViewTouch;
 
 public class ImageViewPager extends ViewPager {
+    boolean isPagingEnabled;
 
     public ImageViewPager(Context context) {
         super(context);
@@ -15,6 +17,15 @@ public class ImageViewPager extends ViewPager {
 
     public ImageViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
+    }
+
+    public void setPagingEnabled(boolean b) {
+        this.isPagingEnabled = b;
+    }
+
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
+        return isPagingEnabled && super.onInterceptTouchEvent(ev);
     }
 
     @Override
